@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drive Zone | Автосалон</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #000000, #1c1c1c);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+      animation: fadeInUp 1.2s ease;
+      max-width: 420px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ff3b3b;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1em;
+      margin: 10px 0;
+      color: #ccc;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 30px;
+      background: #ff3b3b;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ff0000;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .bg-glow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: radial-gradient(circle at center, #ff3b3b33 0%, transparent 60%);
+      animation: glow 5s infinite alternate;
+      z-index: -1;
+    }
+
+    @keyframes glow {
+      0% { background-position: center top; }
+      100% { background-position: center bottom; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="card">
+    <h1>Drive Zone</h1>
+    <p>Преміум авто. Надійність. Швидкість.</p>
+    <p>Ми продаємо тільки найкраще — від спортивних до класичних авто.</p>
+    <a href="osn.html" target="_blank" class="btn">Наш магазин</a>
+  </div>
+</body>
+</html>
